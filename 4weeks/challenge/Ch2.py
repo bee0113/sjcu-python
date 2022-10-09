@@ -7,38 +7,34 @@
 # - 찾는 친구의 이름은 사용자로부터 입력 받아 처리한다.(변수명은 적절하게 사용하시오)
 
 
-friends = {'Tom': '010-1234-2222', '홍길동': '010-1234-1234', '홍순이': '010-4321-4332'}
-print('전체 친구 목록', list(friends.keys()))
-
-search = input('검색할 친구 이름:')
-result = ''
-for key in friends:
-    if search == key:
-        result = friends[key]
-        break
-    else:
-        result = '찾는 친구가 없습니다.'
-
-print('친구 연락처: {}'.format(result))
+# friends = {'Tom': '010-1234-2222', '홍길동': '010-1234-1234', '홍순이': '010-4321-4332'}
+# print('전체 친구 목록', list(friends.keys()))
+#
+# search = input('검색할 친구 이름:')
+# result = ''
+# for key in friends:
+#     if search == key:
+#         result = friends[key]
+#         break
+#     else:
+#         result = '찾는 친구가 없습니다.'
+#
+# print('친구 연락처: {}'.format(result))
 
 
 #####################################
-# addr = {}
-# # 1
-# addr['최재원'] = '010-1111-1234'
-# addr['김연수'] = '010-2222-1234'
-# addr['김가현'] = '010-3333-1234'
-# print(addr)
-# print() # 빈줄
-#
-# # 2 이름만 검색 -> 리스트
-# print(list(addr.keys()))
-#
-# # 3 찾는 친구의 연락처 검색(딕셔너리 get())
-# name = input('친구이름:') # name => 키
-# print(addr.get(name, 'not found')) # 키가 없으면 not found 출력
+addr = {}
+# 1
+addr['최재원'] = '010-1111-1234'
+addr['김연수'] = '010-2222-1234'
+addr['김가현'] = '010-3333-1234'
+print(addr)
+print()  # 빈줄
+
+# 2 이름만 검색 -> 리스트
+print(list(addr.keys()))
+
+# 3 찾는 친구의 연락처 검색(딕셔너리 get())
+name = input('친구이름:')  # name => 키
+print(addr.get(name, 'not found'))  # 키가 없으면 not found 출력
 #####################################
-
-
-
-
