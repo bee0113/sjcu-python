@@ -3,14 +3,20 @@
 
 def price(menu):
     if menu == 1:
-        print('아메리카노 2500원')
+        m = '아메리카노'
+        p = '2500원'
     elif menu == 2:
+        m = '카페라떼'
+        p = '3000원'
         print('카페라떼 3000원')
     elif menu == 3:
-        print('바닐라라떼 3000원')
-    else:
-        print('없는 메뉴 입니다.')
+        m = '바닐라라떼'
+        p = '3000원'
+
+    print(m, p, end=' ')
 
 
+# 메인코드
 m = int(input('메뉴선택(1:아메리카노/2:카페라떼/3:바닐라라떼)'))
+# 함수호출
 price(m)
