@@ -14,6 +14,7 @@
 #     print(i, end=' ')
 #     i =i-1
 
+# 딕셔너리
 # menu = {'쌀국수': 4500, '볶음우동': 5000, '햄버거': 4000}
 # for k in menu.keys():
 #     print(k, ':', menu[k])
