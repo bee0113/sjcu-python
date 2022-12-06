@@ -5,5 +5,5 @@ while True:
         break
     age = input('age:')
     f.write(name + age + '\n')
-    print('저장')
+print('저장')
 f.close()
